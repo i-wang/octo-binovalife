@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /var/www/chasles/virux/app/config/routing_dev.yml
+    resource: /home/hp/binovalife/app/config/routing_dev.yml

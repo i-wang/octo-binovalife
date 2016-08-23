@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500italic,500,400italic,300italic,300,100italic,100);
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 /***********
 
 Reset / Basics
@@ -19,6 +20,7 @@ body{
     line-height: 24px;
     margin-bottom: 0px;
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 
 }
 .page-wrapper{
