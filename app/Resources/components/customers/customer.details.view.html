@@ -1,0 +1,187 @@
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 margin-b-30">
+        <div class="tile purple">
+            <div class="tile-title clearfix bread0">
+
+                  <ul class="nav navbar-nav navbar-right" style="padding:0 5%">
+                  <h4 style="color:#fff;font-weight:bolder;text-transform:uppercase">  {{ct.cust.customername}} </h4>
+                  </ul>
+
+
+            </div><!--.tile-title-->
+            <div class="tile-body clearfix">
+              <div class="col-xs-12 col-md-7 col-md-7 col-xs-12" style="background:#fafafa;padding:20px;border:1px solid #eee">
+                      <dl class="dl-horizontal text-left">
+                              <dt>CUSTOMER ID</dt>
+                              <dd>
+                                {{ct.cust.customername}}
+                              </dd>
+                      </dl>
+                      <dl class="dl-horizontal">
+                              <dt>PRODUCT NAME</dt>
+                              <dd>
+                                {{ct.cust.productname}}
+                              </dd>
+                      </dl>
+                      <dl class="dl-horizontal">
+                              <dt>STATUS</dt>
+                              <dd>
+                                {{ct.cust.status}}
+                              </dd>
+                      </dl>
+                      <dl class="dl-horizontal">
+                              <dt>PHONE NUMBER</dt>
+                              <dd ng-repeat="com in ct.phones |orderBy:'category'">
+                                  <span class="fa fa-phone" style="color:#747474"></span>&nbsp;&nbsp;&nbsp;
+                                  <a class="extLink visible-xs"  ng-if="com.category==='Phone'" href="tel:{{com.value}}">{{com.value}}</a>
+                                  <a class="extLink hidden-xs"  ng-if="com.category==='Phone'">{{com.value}}</a>
+                              </dd>
+                      </dl>
+
+                      <dl class="dl-horizontal ">
+                              <dt>EMAIL ADDRESS</dt>
+                              <dd ng-repeat="com in ct.emails |orderBy:'category'">
+                                  <span class="fa fa-envelope" aria-hidden="true" style="color:#747474"></span>&nbsp;&nbsp;&nbsp;
+                                  <a ng-if="com.category==='Email'" class="extLink">{{com.value}}</a><br>
+                              </dd>
+                      </dl>
+
+              </div>
+              <div class="col-xs-12 col-md-5 col-sm-5"  style="padding:20px" ng-repeat="address in ct.addresses |orderBy:'id'">
+                <dl class="dl-horizontal text-left">
+                        <dt>ADDRESS</dt>
+                        <dd>
+                          <address>
+                          <span class="fa fa-map-marker" aria-hidden="true" style="color:#747474">
+                          </span>&nbsp;&nbsp;&nbsp;<strong style="text-transform:capitalize">{{address.id}}, &nbsp;&nbsp;{{address.type}},</strong><br>
+                            <span>Street 1:&nbsp;&nbsp;&nbsp;{{address.street1}}  </span>
+                            <br>
+                            <span>Street 2:&nbsp;&nbsp;&nbsp;{{address.street2}},  </span>
+                              <br>
+                              <span>City&nbsp;&nbsp;&nbsp;{{address.city}},<br> </span>
+                                <span>State&nbsp;&nbsp;&nbsp;{{address.state}},<br> </span>
+                                <span> ZIP Code&nbsp;&nbsp;&nbsp;{{address.pincode}},<br> </span>
+                                <span> Country&nbsp;&nbsp;&nbsp;{{address.country}},<br>  </span>
+
+                          </address>
+
+                        </dd>
+                </dl>
+                <dl class="dl-horizontal">
+                        <dt>SKYPE NUMBER</dt>
+                        <dd ng-repeat="com in ct.skypes |orderBy:'category'">
+                            <span class="fa fa-skype" aria-hidden="true" style="color:#747474"></span>&nbsp;&nbsp;&nbsp;
+                            <span style="color:#212121;text-transform:capitalize" id="skypenumber">{{com.value}}</span>
+                            <span  id="SkypeButton_Call_proxy.lee_1" class="pull-right">
+                             <!-- <script type="text/javascript">
+                             var s = document.getElementById('skypenumber');
+                             var number = s.text;
+                             console.log(number);
+                             Skype.ui({
+                             "name": "call",
+                             "element": "SkypeButton_Call_proxy.lee_1",
+                             "participants": ["proxy.lee"],
+                             "imageSize": 16
+                             });
+                             </script> -->
+                           </span>
+
+                        </dd>
+                </dl>
+
+              </div>
+            </div><!--.tile-body-->
+            <div class="tile-footer tile-tabs" style="padding-left:20px;color:#000;border:1px solid #fff!important" ng-controller="TabController as tab">
+
+
+                  <div class="col-md-12 col-xs-12 col-sm-12">
+                		<ul class="nav nav-tabs">
+                     	<li ng-class="{active:tab.isSet(1)}"><a href ng-click="tab.setTab(1)">Notes</a></li>
+                      <li ng-class="{active:tab.isSet(2)}"><a href ng-click="tab.setTab(2)">Visits</a></li>
+                   	</ul>
+                	</div>
+                  <div class="col-md-12 col-xs-12 col-sm-12" >
+                     	<div ng-show="tab.isSet(1)">
+                        <form name="form" ng-submit="ct.updateNote()" role="form">
+                            </br>
+                          <div class="form-group col-xs-12 col-sm-1 col-md-1">
+                              <label for="notes">Notes</label>
+                          </div>
+                          <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                              <textarea rows="4" cols="50" type="text" name="notes" id="notes" class="form-control" ng-model="ct.notesNote" placeholder="Enter your notes" required style="border-radius:0" ></textarea>
+
+                              <span ng-show="form.notes.$dirty && form.notes.$error.required" class="help-block pull-right"><i class="fa fa-close"></i></span>
+                          </div>
+                          <div class="form-group col-xs-12 col-sm-3 col-md-3 text-right">
+                              <label for="notes">Status</label>
+                          </div>
+                          <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                              <select class="form-control" ng-model="ct.notesStatus" ng-options="opt for opt in tab.status" style="border-radius:0"></select>
+
+                          </div>
+
+                         </form>
+
+
+                      	</div>
+              			<div ng-show="tab.isSet(2)" class="col-xs-12 col-sm-12 col-md-12">
+
+                      <form name="form" ng-submit="ct.updateVisit()" role="form" style="color:#000">
+                              </br></br>
+                              <div  class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group col-xs-12 col-sm-4 col-md-4">
+                                    <label for="notes"><i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;Date</label>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6" ng-class="{'has-error': datepickerForm.date.$invalid}" >
+                                    <input type="text" class="form-control" ng-model="ct.visitsDate" name="date" bs-datepicker>
+                                </div>
+                              </div>
+                              <div  class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                                    <label for="notes"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Time</label></label>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6" >
+                                  <input class="form-control"  ng-model="ct.visitsTime" name="time" bs-timepicker data-time-format="HH:mm" data-length="1" data-minute-step="1" data-arrow-behavior="picker" type="text">
+                                </div>
+                              </div>
+                              <div  class="col-xs-12 col-sm-6 col-md-6">
+
+                                  <div class="form-group col-xs-12 col-sm-4 col-md-4">
+                                      <label for="notesaction">Notes</label>
+                                  </div>
+                                  <div class="form-group col-xs-12 col-sm-8 col-md-8" >
+                                    <textarea   type="text" name="notesvisits" id="notes" class="form-control" ng-model="ct.visitsNotes" placeholder="Enter your notes" required style="border-radius:0" ></textarea>
+                                    <span ng-show="form.notesvisits.$dirty && form.notesvisits.$error.required" class="help-block pull-right"><i class="fa fa-close"></i></span>
+
+                                  </div>
+                              </div>
+                              <div  class="col-xs-12 col-sm-6 col-md-6">
+                                  <div class="form-group col-xs-12 col-sm-4 col-md-4" style="padding-left:10%">
+                                      <label for="notesvisits">Action</label>
+                                  </div>
+                                  <div class="form-group col-xs-12 col-sm-8 col-md-8" >
+                                    <select class="form-control" ng-model="ct.visitsAction" ng-options="opt for opt in tab.actions" style="border-radius:0"></select>
+                                 </div>
+                            </div>
+                      </form>
+                   	</div>
+                 	</div>
+
+
+
+            </div><!--.tile footer-->
+
+            <div class="tile-body clearfix " style="border:1px solid #eee">
+              <a  ng-click="ct.updateVisit()"  class="btn btn-primary pull-right btn-login col-xs-6 col-sm-2 col-md-2">
+                <span  class="fa fa-pencil-square-o"></span>&nbsp;&nbsp;Save Visits
+              </a>
+              <a  ng-click="ct.updateNote()" class="btn btn-primary pull-right btn-login col-xs-6 col-sm-2 col-md-2">
+                 <span  class="fa fa-pencil-square-o"></span>&nbsp;&nbsp;Save Notes
+              </a>
+
+           </div><!--.tile-body-->
+        </div><!-- .tile-->
+    </div><!--end .col-->
+
+</div><!--end .row-->

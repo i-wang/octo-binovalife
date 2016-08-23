@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    #database_url: 'sqlite:///%kernel.root_dir%/data/dba_test.sqlite'
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: inovalife_dbase
+    database_user: root
+    database_password: lili
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: secret_value_for_security_code

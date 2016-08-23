@@ -1,0 +1,75 @@
+
+
+    <div class="col-md-12 col-xs-12 col-sm-12">
+  		<ul class="nav nav-tabs">
+       	<li ng-class="{ active: isSet(1) }">
+          	<a href ng-click="setTab(1)">Nots</a>
+       	</li>
+       	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Visits</a>
+       	</li>
+     	</ul>
+  	</div>
+    <div class="col-md-12 col-xs-12 col-sm-12">
+       	<div ng-show="isSet(1)">
+          <form name="form" ng-submit="ct.updateNote()" role="form">
+              </br>
+            <div class="form-group col-xs-12 col-sm-1 col-md-1">
+                <label for="notes">Notes</label>
+            </div>
+            <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                <textarea rows="4" cols="50" type="text" name="notes" id="notes" class="form-control" ng-model="notes" placeholder="Enter your notes" required style="border-radius:0" ></textarea>
+
+                <span ng-show="form.notes.$dirty && form.notes.$error.required" class="help-block pull-right"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="form-group col-xs-12 col-sm-3 col-md-3 text-right">
+                <label for="notes">Status</label>
+            </div>
+            <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                <select class="form-control" ng-model="notesstatus" ng-options="opt for opt in status" style="border-radius:0"></select>
+
+            </div>
+           </form>
+
+
+        	</div>
+			<div ng-show="isSet(2)">
+        <form name="form" ng-submit="ct.updateVisit()" role="form">
+                </br>
+                <p class="input-group">
+                  <input type="text" class="form-control" datetime-picker="dd MMM yyyy HH:mm" ng-model="myDate" is-open="isOpen"  />
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="openCalendar($event, prop)"><i class="fa fa-calendar"></i></button>
+                  </span>
+                </p>
+                <div class="form-group col-xs-12 col-sm-2 col-md-2">
+                    <label for="notes">Date</label>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+
+                    <input type="date" class="form-control"  ng-model="dt"  ng-required="true" style="border-radius:0" />
+
+                </div>
+                <div class="form-group col-xs-12 col-sm-2 col-md-2" style="padding-left:10%">
+                    <label for="notes">Time</label>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                  <select class="form-control" ng-model="times" ng-options="opt for opt in times" style="border-radius:0"></select>
+                </div>
+                <div class="form-group col-xs-12 col-sm-2 col-md-2">
+                    <label for="notesaction">Notes</label>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                  <textarea   type="text" name="notesvisits" id="notes" class="form-control" ng-model="ct.notesvisits" placeholder="Enter your notes" required style="border-radius:0" ></textarea>
+                  <span ng-show="form.notesvisits.$dirty && form.notesvisits.$error.required" class="help-block pull-right"><i class="fa fa-close"></i></span>
+
+                </div>
+                <div class="form-group col-xs-12 col-sm-2 col-md-2" style="padding-left:10%">
+                    <label for="notesvisits">Action</label>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-md-4" >
+                  <select class="form-control" ng-model="action" ng-options="opt for opt in actions" style="border-radius:0"></select>
+                                </div>
+        </form>
+     	</div>
+   	</div>

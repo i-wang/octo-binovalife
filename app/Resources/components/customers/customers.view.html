@@ -1,0 +1,76 @@
+
+<div class="row" style="margin-bottom:-50px">
+    <div class="col-md-12">
+      <div class="tile purple">
+        <div class="tile-title clearfix  bread">
+
+                <ul class="nav navbar-nav navbar-right" style="padding:0 5%">
+                    <li>
+                      <form class="mainnav-form" role="search">
+                          <input class="form-control"  type="text"  placeholder="Search" style="background-color:#fff;color: #00B0FF;border:1px solid #eee;border-radius:20px" ng-model="cs.searchQ">
+                          <!-- <input class="form-control input-md" placeholder="Search" type="text" > -->
+                          <button class="btn btn-sm mainnav-form-btn" type="button"><i class="fa fa-search" style="margin-top:2px;position:absolute;color: #00B0FF"></i></button>
+                      </form>
+                    </li>
+                </ul>
+
+        </div><!--.tile-title-->
+
+      </div><!-- .tile-->
+        <div class="panel panel-default recent-activites">
+            <!-- Start .panel -->
+            <div class="panel-body0 pad-0">
+
+                <div class="table-responsive">
+
+                    <table class="table  table-recent-orders">
+                        <thead>
+                          <tr>
+                            <td class="filter-row">
+                                Customer Name
+                            </td>
+                            <td class="filter-row">
+                                Customer ID&nbsp;
+                            </td>
+                            <td class="filter-row">
+                                Product Name
+                            </td>
+                            <td class="filter-row">
+                                Status
+                            </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr  ng-repeat="customer in customers |orderBy:cs.sortType:cs.sortReverse | filter:cs.searchQ"  ng-click="cs.detailCustomer(customer.id)" style="cursor:pointer">
+
+                              <!-- <a href="#/customers/{{customer.id}}"  class="btn btn-link"> -->
+                                <td>{{customer.customername}}</td>
+                                <td>{{customer.id}}</td>
+                                <td>{{customer.productname}}</td>
+                                <td>{{customer.status}}</td>
+                                <!-- </a> -->
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="tile-body clearfix" >
+                    <div class="col-md-10 col-md-offset-1" id="footer">
+                      <a ng-click="cs.sortType = 'customername'; cs.sortReverse = !cs.sortReverse" class="btn btn-primary pull-right btn-login col-xs-6 col-sm-2 col-md-2">
+                      <span class="fa fa-sort-alpha-asc" aria-hidden="true" ng-show="cs.sortType == 'customername' && cs.sortReverse" ></span>&nbsp;&nbsp;Sort&nbsp;&nbsp;<span class="fa fa-sort-alpha-desc" aria-hidden="true" ng-show="cs.sortType == 'customername' && !cs.sortReverse"></span></a>
+                        <a ng-click="cs.refreshCustomers()" class="btn btn-primary pull-right btn-login col-xs-6 col-sm-2 col-md-2" >
+                          <span  class="fa fa-refresh"></span>&nbsp;&nbsp;Refresh
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div><!--end .col-->
+
+</div><!--end .row-->

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>{% block title %}Binovalife :: WEB OFFICE{% endblock %}</title>
+
+    <!-- Bootstrap -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+            {% block stylesheets %}
+            {# uncomment the following lines to compile SCSS assets with Assetic
+
+                {% stylesheets filter="scssphp" output="css/app.css"
+                    "%kernel.root_dir%/Resources/assets/scss/bootstrap-flatly.scss"
+                    "%kernel.root_dir%/Resources/assets/scss/font-awesome.scss"
+                    "%kernel.root_dir%/Resources/assets/css/*.css"
+                    "%kernel.root_dir%/Resources/assets/scss/main.scss"
+                %}
+                    <link rel="stylesheet" href="{{ asset_url }}" />
+                {% endstylesheets %}
+            #}
+                <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+                <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+                <link href="{{ asset('css/waves.css') }}" type="text/css" rel="stylesheet">
+                <!-- <link rel="stylesheet" href="{{ asset('css/nanoscroller.css') }}"> -->
+                <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
+
+
+            {% endblock %}
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+</head>
+<body class="pace-done">
+    <!-- <loader></loader> -->
+    <!-- Static navbar -->
+    <!-- <header ng-if="showNav"></header> -->
+    <!-- <div class="container page-wrapper">
+      <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+
+    </div> -->
+    <!-- Custom footer -  -->
+    <!-- <uifooter></uifooter> -->
+    <!-- <div ng-view></div> -->
+    <div class="container page-wrapper" style="background:#548235;z-index:-5000;width:100%;height:100%">
+    <nav class="navbar navbar-inverse yamm navbar-static-top" >
+        <div class="container">
+            <!-- <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> </a>
+            </div> -->
+            <div  style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right navbar-top-drops">
+                    <li class="dropdown profile-dropdown">
+                        <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button" style="background:#fff;padding:4px 20px;font-size:80%;color:#000">
+                          {% for locale in locales() %}
+                              {% if app.request.locale == locale.code %}{{ locale.name|capitalize }} {% endif %}
+                          {% endfor %}
+                          &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#548235"></i></a>
+                        <ul class="dropdown-menu" style="border-radius:0;margin-top:1px" >
+                            <!-- <li><a href="#/customers" style="padding:4px 10px;font-size:80%;margin-top:6px">French</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#/logout" style="padding:4px 10px;font-size:80%">Deutch</a></li> -->
+                            {% for locale in locales() %}
+                                <li  {% if app.request.locale == locale.code %} {% endif %}><a href="{{ path(app.request.get('_route', 'blog_index'), app.request.get('_route_params', [])|merge({ _locale: locale.code })) }}" style="padding:4px 10px;font-size:80%;margin-top:6px">{{ locale.name|capitalize }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <div class="col-md-12 col-md-offset-0 row" style="background:#f2f2f2">
+
+    </div>
+    {% block javascripts %}
+    {# uncomment the following lines to combine and minimize JavaScript assets with Assetic
+        {% javascripts filter="?jsqueeze" output="js/app.js"
+            "%kernel.root_dir%/Resources/assets/js/jquery-2.1.4.js"
+            "%kernel.root_dir%/Resources/assets/js/moment.min.js"
+            "%kernel.root_dir%/Resources/assets/js/bootstrap-3.3.4.js"
+            "%kernel.root_dir%/Resources/assets/js/highlight.pack.js"
+            "%kernel.root_dir%/Resources/assets/js/bootstrap-datetimepicker.min.js"
+            "%kernel.root_dir%/Resources/assets/js/main.js" %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    #}
+
+
+        <script src="{{ asset('js/libs/jquery-2.1.1.min.js') }}"></script>
+        <script src="{{ asset('js/libs/angular.js') }}"></script>
+        <script src="{{ asset('js/libs/angular-route.js') }}"></script>
+        <script src="{{ asset('js/libs/angular-cookies.js') }}"></script>
+        <script src="{{ asset('js/libs/angular-animate.js') }}"></script>
+
+        <script src="{{ asset('js/libs/angular-mocks.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+          <script src="{{ asset('js/app.js') }}"></script>
+
+          <script src="{{ asset('js/loader.service.js') }}"></script>
+          <script src="{{ asset('js/loader.controller.js') }}"></script>
+          <script src="{{ asset('js/header.controller.js') }}"></script>
+          <script src="{{ asset('js/footer.controller.js') }}"></script>
+
+          <script src="{{ asset('js/login.controller.js') }}"></script>
+          <script src="{{ asset('js/logout.controller.js') }}"></script>
+          <script src="{{ asset('js/authentication.service.js') }}"></script>
+
+          <script src="{{ asset('js/libs/angular-sanitize.min.js') }}" data-semver="1.5.5"></script>
+          <script src="{{ asset('js/libs/angular-strap.js') }}" data-semver="v2.3.8"></script>
+          <script src="{{ asset('js/libs/angular-strap.tpl.js') }}" data-semver="v2.3.8"></script>
+
+          <script src="{{ asset('js/libs/crypto-js.js') }}"></script>
+          <script src="{{ asset('js/libs/sha1.js') }}"></script>
+
+
+    {% endblock %}
+
+
+    <!-- <script src="../../assets/libs/jquery-2.1.1.min.js"></script>
+    <script src="../../assets/libs/angular.js"></script>
+
+    <script src="../../assets/libs/angular-route.js"></script>
+    <script src="../../assets/libs/angular-cookies.js"></script>
+    <script type="text/javascript" src="../../assets/libs/angular-animate.js"></script>
+    <script src="../../assets/libs/angular-mocks.js"></script>
+
+
+
+    <script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
+    <!-- Libs to remove  -->
+    <!-- <script src="../../assets/libs/angular-sanitize.min.js" data-semver="1.5.5"></script>
+    <script src="../../assets/libs/angular-strap.js" data-semver="v2.3.8"></script>
+    <script src="../../assets/libs/angular-strap.tpl.js" data-semver="v2.3.8"></script>
+
+    <script src="../../assets/libs/crypto-js.js"></script>
+    <script src="../../assets/libs/sha1.js"></script> -->
+
+
+
+
+    <!-- <script src="app/app.js"></script>
+
+    <script src="partials/loader/loader.service.js"></script>
+    <script src="partials/loader/loader.controller.js"></script>
+    <script src="partials/header/header.controller.js"></script>
+    <script src="partials/footer/footer.controller.js"></script> -->
+    <!-- <script src="partials/ui/ui.controller.js"></script> -->
+    <!-- <script src="partials/ui/tab.controller.js"></script> -->
+
+    <!-- Local storage service  -->
+    <!-- <script src="components/authenticate/auth.users.service.js"></script>
+    <script src="components/customers/customers.service.js"></script>
+    <script src="components/customers/customers.controller.js"></script>
+    <script src="components/authenticate/login.controller.js"></script>
+    <script src="components/authenticate/logout.controller.js"></script>
+    <script src="components/authenticate/authentication.service.js"></script>
+    <script src="components/customers/customer.details.controller.js"></script> -->
+    <!-- <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script> -->
+
+</body>
+</html>

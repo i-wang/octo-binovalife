@@ -1,0 +1,28 @@
+{
+    "name": "Binovalife - Marketing de Reseau",
+    "description": "Binovalife - Marketing de Reseau",
+    "keywords": [
+        "php",
+        "symfony",
+        "bootstrap",
+        "angular"
+    ],
+    "website": "http://chasles.com",
+    "repository": "https://github.com/wang_lee/binovalife",
+    "logo": "https://symfony.com/images/v5/pictos/demoapp.svg?v=4",
+    "success_url": "/",
+    "scripts": {
+        "postdeploy": "php bin/console doctrine:schema:create && php bin/console doctrine:fixtures:load -n"
+    },
+    "env": {
+        "SYMFONY_ENV": "prod",
+        "SYMFONY_SECRET": {
+            "description": "Extra entropy for %kernel.secret%; used for CSRF tokens, cookies and signed URLs.",
+            "generator": "secret"
+        }
+    },
+    "addons": [
+        "heroku-postgresql"
+    ],
+    "image": "heroku/php"
+}
