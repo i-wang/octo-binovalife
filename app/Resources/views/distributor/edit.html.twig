@@ -1,20 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Distributor edit</h1>
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+<div class="col-md-12" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%;border-top:1px solid #f2f2f2">
+  <div class="col-md-10 col-md-offset-1 navbar-brand" href="#" style="padding:15px 0;">
+        <h6 style="color:#747474;font-size:.9em;margin-top:20px">&nbsp;&nbsp;{{ 'action.register_in'|trans }}
 
-    <ul>
-        <li>
-            <a href="{{ path('distributor_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        </h6>
+
+  </div>
+  <div class="col-md-6 col-md-offset-3" style="margin-top:1%;background:#fff">
+  {{ form_start(edit_form) }}
+      {{ form_widget(edit_form) }}
+      <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary pull-right btn-login col-md-12" style="background:#548235">{{ 'action.validate_in'|trans }}</button>
+  {{ form_end(edit_form) }}
+
+</div>
+</div>
+
 {% endblock %}

@@ -18,10 +18,18 @@ class DistributorType extends AbstractType
             ->add('username')
             ->add('email')
             ->add('password')
-            ->add('roles')
+            ->add('roles',ChoiceType::class, array(
+                'choices' => array(
+                  'ROLE_SALES' => 'Distribution',
+                  'ROLE_SALES' => 'Sales'
+                ),
+                'required'    => false,
+                'placeholder' => 'Choose categoriy',
+                'empty_data'  => null
+            ))
             ->add('firstName')
             ->add('lastName')
-            ->add('birthDate')
+            // ->add('birthDate', DateTimeType::class)
             ->add('phoneNumber')
             ->add('country')
             ->add('city')

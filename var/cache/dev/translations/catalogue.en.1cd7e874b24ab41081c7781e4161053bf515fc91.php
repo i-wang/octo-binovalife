@@ -164,6 +164,7 @@ $catalogue = new MessageCatalogue('en', array (
     'help.add_user' => 'If you want to create new users, run this other command:',
     'help.more_information' => 'For more information, check out the <a href="http://symfony.com/doc">Symfony doc</a>.',
     'action.validate_in' => 'Validate',
+    'action.success_in' => 'Success Distributor created!',
     'action.welcome_in' => 'Welcome',
     'action.user_nber' => 'ID Number',
     'action.status_in' => 'You are now',

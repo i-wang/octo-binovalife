@@ -1,72 +1,14 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
-    <h1>Distributor</h1>
+<div class="col-md-12" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%;border-top:1px solid #f2f2f2">
+  <div class="col-md-8 col-md-offset-2 navbar-brand text-center" href="#" style="padding:15px 0;">
+        <h6 style="color:#747474;font-size:.9em;margin-top:20px">&nbsp;&nbsp;{{ 'action.success_in'|trans }}
+        </h6>
+          <a style="font-size:90%" href="{{ path('distributor_edit', { 'id': distributor.id }) }}"><i class="fa fa-edit"></i>Edit</a>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ distributor.id }}</td>
-            </tr>
-            <tr>
-                <th>Username</th>
-                <td>{{ distributor.username }}</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>{{ distributor.email }}</td>
-            </tr>
-            <tr>
-                <th>Password</th>
-                <td>{{ distributor.password }}</td>
-            </tr>
-            <tr>
-                <th>Roles</th>
-                <td>{{ distributor.roles }}</td>
-            </tr>
-            <tr>
-                <th>Firstname</th>
-                <td>{{ distributor.firstName }}</td>
-            </tr>
-            <tr>
-                <th>Lastname</th>
-                <td>{{ distributor.lastName }}</td>
-            </tr>
-            <tr>
-                <th>Birthdate</th>
-                <td>{% if distributor.birthDate %}{{ distributor.birthDate|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Phonenumber</th>
-                <td>{{ distributor.phoneNumber }}</td>
-            </tr>
-            <tr>
-                <th>Country</th>
-                <td>{{ distributor.country }}</td>
-            </tr>
-            <tr>
-                <th>City</th>
-                <td>{{ distributor.city }}</td>
-            </tr>
-            <tr>
-                <th>Address</th>
-                <td>{{ distributor.address }}</td>
-            </tr>
-        </tbody>
-    </table>
+  </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('distributor_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('distributor_edit', { 'id': distributor.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+
+</div>
+
 {% endblock %}

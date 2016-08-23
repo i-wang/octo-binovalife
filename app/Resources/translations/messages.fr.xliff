@@ -20,6 +20,10 @@
                 <source>tip</source>
                 <target>ASTUCE</target>
             </trans-unit>
+            <trans-unit id="action.success_in">
+                <source>action.success_in</source>
+                <target>Success Distributeur creer!</target>
+            </trans-unit>
             <trans-unit id="not_available">
                 <source>not_available</source>
                 <target>Indisponible</target>

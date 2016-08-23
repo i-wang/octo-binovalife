@@ -18,8 +18,8 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b = $this->env->getExtension("native_profiler");
-        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b->enter($__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/index.html.twig"));
+        $__internal_2f489aa2136389f6115159fee32cbeb170b1deeea75ef7f0c5fbb97956e33be1 = $this->env->getExtension("native_profiler");
+        $__internal_2f489aa2136389f6115159fee32cbeb170b1deeea75ef7f0c5fbb97956e33be1->enter($__internal_2f489aa2136389f6115159fee32cbeb170b1deeea75ef7f0c5fbb97956e33be1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/index.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -266,7 +266,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("term_condition"), "html", null, true);
         echo "</a> | <a href=\"#\">";
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("business_model"), "html", null, true);
-        echo "</a> | <a href=\"#\">>";
+        echo "</a> | <a href=\"#\">";
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("product_price"), "html", null, true);
         echo "</a>
             </br> <i style=\"color:#548235;font-style:normal\"> © Copyright 2016, Binovalife. </i></span>
@@ -286,27 +286,27 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo "</html>
 ";
         
-        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b->leave($__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b_prof);
+        $__internal_2f489aa2136389f6115159fee32cbeb170b1deeea75ef7f0c5fbb97956e33be1->leave($__internal_2f489aa2136389f6115159fee32cbeb170b1deeea75ef7f0c5fbb97956e33be1_prof);
 
     }
 
     // line 9
     public function block_title($context, array $blocks = array())
     {
-        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab = $this->env->getExtension("native_profiler");
-        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab->enter($__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a75ff034e43e78bbaafc78dfe1fdf4128502fd5a93ea05535facfbcee2c7b12c = $this->env->getExtension("native_profiler");
+        $__internal_a75ff034e43e78bbaafc78dfe1fdf4128502fd5a93ea05535facfbcee2c7b12c->enter($__internal_a75ff034e43e78bbaafc78dfe1fdf4128502fd5a93ea05535facfbcee2c7b12c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Binovalife :: WEB OFFICE";
         
-        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab->leave($__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab_prof);
+        $__internal_a75ff034e43e78bbaafc78dfe1fdf4128502fd5a93ea05535facfbcee2c7b12c->leave($__internal_a75ff034e43e78bbaafc78dfe1fdf4128502fd5a93ea05535facfbcee2c7b12c_prof);
 
     }
 
     // line 19
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487 = $this->env->getExtension("native_profiler");
-        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487->enter($__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_fa787b9a32e54e441500563e62d766b3f641b07c6377c1ee53fc2d409a48ecaa = $this->env->getExtension("native_profiler");
+        $__internal_fa787b9a32e54e441500563e62d766b3f641b07c6377c1ee53fc2d409a48ecaa->enter($__internal_fa787b9a32e54e441500563e62d766b3f641b07c6377c1ee53fc2d409a48ecaa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 20
         echo "            ";
@@ -334,15 +334,15 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
             ";
         
-        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487->leave($__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487_prof);
+        $__internal_fa787b9a32e54e441500563e62d766b3f641b07c6377c1ee53fc2d409a48ecaa->leave($__internal_fa787b9a32e54e441500563e62d766b3f641b07c6377c1ee53fc2d409a48ecaa_prof);
 
     }
 
     // line 168
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c = $this->env->getExtension("native_profiler");
-        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c->enter($__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_5bbe4d0c4ffea303ee5154d5a5e4420d3d0a4e6f4864bc7bdd3c352f0db12723 = $this->env->getExtension("native_profiler");
+        $__internal_5bbe4d0c4ffea303ee5154d5a5e4420d3d0a4e6f4864bc7bdd3c352f0db12723->enter($__internal_5bbe4d0c4ffea303ee5154d5a5e4420d3d0a4e6f4864bc7bdd3c352f0db12723_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 169
         echo "    ";
@@ -431,7 +431,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo "\"></script>
     ";
         
-        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c->leave($__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c_prof);
+        $__internal_5bbe4d0c4ffea303ee5154d5a5e4420d3d0a4e6f4864bc7bdd3c352f0db12723->leave($__internal_5bbe4d0c4ffea303ee5154d5a5e4420d3d0a4e6f4864bc7bdd3c352f0db12723_prof);
 
     }
 
@@ -606,7 +606,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 /*                 <div class="prefooter">*/
 /*                         <div class="tile purple">*/
 /*                             <div class="tile-footer text-center">*/
-/*                                 <span style="font-size:11px"><a href="#">{{ 'term_condition'|trans }}</a> | <a href="#">{{ 'business_model'|trans }}</a> | <a href="#">>{{ 'product_price'|trans }}</a>*/
+/*                                 <span style="font-size:11px"><a href="#">{{ 'term_condition'|trans }}</a> | <a href="#">{{ 'business_model'|trans }}</a> | <a href="#">{{ 'product_price'|trans }}</a>*/
 /*             </br> <i style="color:#548235;font-style:normal"> © Copyright 2016, Binovalife. </i></span>*/
 /*                             </div>*/
 /*                         </div>*/

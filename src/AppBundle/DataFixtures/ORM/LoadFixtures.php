@@ -45,7 +45,7 @@ class LoadFixtures implements FixtureInterface, ContainerAwareInterface
         $wangDist->setCountry('cameroon');
         $wangDist->setCity('Dla');
         $wangDist->setAddress('Akwa');
-        $wangDist->setRoles(['ROLE_ADMIN']);
+        $wangDist->setRoles(['ROLE_SALES']);
         $encodedPassword = $passwordEncoder->encodePassword($wangDist, '123456');
         $wangDist->setPassword($encodedPassword);
         $manager->persist($wangDist);

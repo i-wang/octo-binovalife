@@ -225,6 +225,12 @@
                 <source>action.validate_in</source>
                 <target>Validate</target>
             </trans-unit>
+            <trans-unit id="action.success_in">
+                <source>action.success_in</source>
+                <target>Success Distributor created!</target>
+            </trans-unit>
+
+
 
             <trans-unit id="action.welcome_in">
                 <source>action.welcome_in</source>
