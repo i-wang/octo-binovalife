@@ -198,6 +198,15 @@ $catalogue = new MessageCatalogue('fr', array (
     'term_condition' => 'Termes et conditions',
     'business_model' => 'Modele Business Entreprise',
     'product_price' => 'Produits et Prix',
+    'menu_1' => 'Accueil',
+    'menu_2' => 'Inscription',
+    'menu_3' => 'Mon Compte',
+    'menu_4' => 'Mon Reseau',
+    'menu_5' => 'Rapport',
+    'menu_6' => 'Commission',
+    'menu_7' => 'Commandes',
+    'menu_8' => 'Historique et Archives',
+    'menu_9' => 'Pharmacovigilance',
   ),
 ));
 
@@ -388,6 +397,15 @@ $catalogueEn = new MessageCatalogue('en', array (
     'term_condition' => 'Terms and conditions',
     'business_model' => 'Company Business Model',
     'product_price' => 'Products and Prices',
+    'menu_1' => 'Accueil',
+    'menu_2' => 'Registration',
+    'menu_3' => 'My Account',
+    'menu_4' => 'My Network',
+    'menu_5' => 'Report',
+    'menu_6' => 'Commission',
+    'menu_7' => 'Commands',
+    'menu_8' => 'Historic et Archives',
+    'menu_9' => 'Pharmacovigilance',
   ),
 ));
 $catalogue->addFallbackCatalogue($catalogueEn);

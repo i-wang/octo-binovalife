@@ -1,16 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Distributor creation</h1>
-
+<div class="col-md-12" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%;border-top:1px solid #f2f2f2">
+  <div class="col-md-12 navbar-brand" href="#" style="padding:15px 0;">
+        <h6 style="color:#747474;font-size:.9em;margin-top:20px">&nbsp;&nbsp;{{ 'action.register_in'|trans }}<i style="color:#747474;padding-top:6px;font-size:.8em;" class="pull-right">{{ 'action.comp_in'|trans }}</i>
+</h6>
+        <!-- <h6 style="color:#747474;padding-top:6px;font-size:.8em;">Découvrez l’exceptionnel pouvoir de compensation de notre marketing de réseau, en construisant votre équipe.</h6> -->
+        <!-- <img  ng-src="{{ asset('loading.gif') }}"  class="pull-right" /> -->
+  </div>
+    </div>
     {{ form_start(form) }}
         {{ form_widget(form) }}
         <input type="submit" value="Create" />
     {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('distributor_index') }}">Back to the list</a>
-        </li>
-    </ul>
+    
 {% endblock %}

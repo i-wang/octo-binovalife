@@ -126,6 +126,65 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
         not_dist_create:
 
+        // distributor_index
+        if (preg_match('#^/(?P<_locale>en|fr)/distributor/?$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_distributor_index;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'distributor_index');
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'distributor_index')), array (  '_controller' => 'AppBundle\\Controller\\DistributorController::indexAction',  '_locale' => 'en',));
+        }
+        not_distributor_index:
+
+        // distributor_new
+        if (preg_match('#^/(?P<_locale>en|fr)/distributor/new$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_distributor_new;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'distributor_new')), array (  '_controller' => 'AppBundle\\Controller\\DistributorController::newAction',  '_locale' => 'en',));
+        }
+        not_distributor_new:
+
+        // distributor_show
+        if (preg_match('#^/(?P<_locale>en|fr)/distributor/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_distributor_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'distributor_show')), array (  '_controller' => 'AppBundle\\Controller\\DistributorController::showAction',  '_locale' => 'en',));
+        }
+        not_distributor_show:
+
+        // distributor_edit
+        if (preg_match('#^/(?P<_locale>en|fr)/distributor/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_distributor_edit;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'distributor_edit')), array (  '_controller' => 'AppBundle\\Controller\\DistributorController::editAction',  '_locale' => 'en',));
+        }
+        not_distributor_edit:
+
+        // distributor_delete
+        if (preg_match('#^/(?P<_locale>en|fr)/distributor/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'DELETE') {
+                $allow[] = 'DELETE';
+                goto not_distributor_delete;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'distributor_delete')), array (  '_controller' => 'AppBundle\\Controller\\DistributorController::deleteAction',  '_locale' => 'en',));
+        }
+        not_distributor_delete:
+
         // security_login
         if (preg_match('#^/(?P<_locale>en|fr)/login$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'security_login')), array (  '_controller' => 'AppBundle\\Controller\\SecurityController::loginAction',  '_locale' => 'en',));

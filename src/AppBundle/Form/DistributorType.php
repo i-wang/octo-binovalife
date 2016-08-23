@@ -21,14 +21,14 @@ class DistributorType extends AbstractType
             ->add('roles')
             ->add('firstName')
             ->add('lastName')
-            ->add('birthDate', 'date')
+            ->add('birthDate')
             ->add('phoneNumber')
             ->add('country')
             ->add('city')
             ->add('address')
         ;
     }
-    
+
     /**
      * @param OptionsResolver $resolver
      */

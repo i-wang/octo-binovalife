@@ -1,16 +1,63 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
-    <h1>Distributor list</h1>
+<div class="container-fluid">
+    <div class="col-md-12 navbar-brand" href="#" style="padding:15px 0;">
+          <h6 style="color:#747474;font-size:.8em;margin-top:20px">&nbsp;&nbsp;{{ 'action.network_in'|trans }}  </h6>
 
-    <table>
-        <thead>
+    </div>
+<div class="col-md-12 row">
+  <a href="{{ path('distributor_new') }}" class="pull-right" style="color:#4A7B3E"><i class="fa fa-edit">&nbsp;&nbsp;&nbsp;Pre-register a Distributor</i></a>
+  <div class="col-md-12 text-center" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%">
+            <div class="col-md-3" style="min-height:140px;background:#f2f2f2;padding:50px 0">
+                <h4>No Photo Available</h4>
+            </div>
+            <div class="col-md-3" style="min-height:120px;background:#ffff">
+                <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+                    <h4 style="text-transform:uppercase"><strong>{{app.user.firstname}}, {{app.user.lastname}}</strong></h4>
+                </div>
+                <div class="col-md-12" style="min-height:50px;background:#fff;padding:10px;color:#747474;font-weight:600f">
+                    <h4>Parrainé par Username, N° ID</h4>
+                </div>
+                <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+                    <h4>Total VPP : 0000</h4>
+                </div>
+
+            </div>
+    <div class="col-md-3" style="height:120px;background:#ffff">
+      <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+           <h4>Total VPP : 0000</h4>
+       </div>
+       <div class="col-md-12" style="min-height:50px;background:#fff;padding:10px;color:#747474;font-weight:600">
+             <h4>Total VPP : 0000</h4>
+        </div>
+        <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+             <h4>Total VPP : 0000</h4>
+         </div>
+
+     </div>
+     <div class="col-md-3" style="height:120px;background:#ffff">
+       <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+             <h4>Total VPP : 0000</h4>
+        </div>
+        <div class="col-md-12" style="min-height:50px;background:#fff;padding:10px;color:#747474;font-weight:600">
+             <h4>Total VPP : 0000</h4>
+         </div>
+         <div class="col-md-12" style="min-height:35px;background:#7f7f7f;padding:10px;color:#fff;font-weight:600">
+               <h4>Total VPP : 0000</h4>
+          </div>
+
+      </div>
+
+ </div>
+
+
+ <div class="col-md-12" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%">
+    <table class="table table-inverse">
+        <thead style="background:#548235;color:#fff">
             <tr>
-                <th>Id</th>
+                <th>ID</th>
                 <th>Username</th>
                 <th>Email</th>
-                <th>Password</th>
-                <th>Roles</th>
                 <th>Firstname</th>
                 <th>Lastname</th>
                 <th>Birthdate</th>
@@ -18,17 +65,15 @@
                 <th>Country</th>
                 <th>City</th>
                 <th>Address</th>
-                <th>Actions</th>
+
             </tr>
         </thead>
         <tbody>
         {% for distributor in distributors %}
             <tr>
-                <td><a href="{{ path('distributor_show', { 'id': distributor.id }) }}">{{ distributor.id }}</a></td>
+                <td>{{ distributor.id }}</td>
                 <td>{{ distributor.username }}</td>
                 <td>{{ distributor.email }}</td>
-                <td>{{ distributor.password }}</td>
-                <td>{{ distributor.roles }}</td>
                 <td>{{ distributor.firstName }}</td>
                 <td>{{ distributor.lastName }}</td>
                 <td>{% if distributor.birthDate %}{{ distributor.birthDate|date('Y-m-d') }}{% endif %}</td>
@@ -36,24 +81,15 @@
                 <td>{{ distributor.country }}</td>
                 <td>{{ distributor.city }}</td>
                 <td>{{ distributor.address }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('distributor_show', { 'id': distributor.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('distributor_edit', { 'id': distributor.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
+
             </tr>
         {% endfor %}
         </tbody>
     </table>
+  </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('distributor_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+
+
+      </div>
+        </div>
 {% endblock %}
