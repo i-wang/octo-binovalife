@@ -190,8 +190,7 @@ class Distributor implements UserInterface
      */
     public function setRoles($roles)
     {
-        $this->roles = $roles;
-
+        $this->roles = 'ROLE_SALES';
         return $this;
     }
 
@@ -206,7 +205,7 @@ class Distributor implements UserInterface
 
       // guarantees that a user always has at least one role for security
       if (empty($roles)) {
-          $roles[] = 'ROLE_USER';
+          $roles[] = 'ROLE_SALES';
       }
 
       return array_unique($roles);
