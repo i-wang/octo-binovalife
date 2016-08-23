@@ -2,9 +2,19 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
         <body>
+          <trans-unit id="login.wrong_credentials">
+              <source>login.wrong_credentials</source>
+              <target>Username et/ou Mot de Passe non valide!</target>
+          </trans-unit>
+
+          <trans-unit id="field.too_short">
+              <source>field.too_short</source>
+              <target>Cet champ est requis!</target>
+          </trans-unit>
+
             <trans-unit id="note">
                 <source>note</source>
-                <target>NOTE</target>
+                <target>Connectez vous a votre Compte</target>
             </trans-unit>
             <trans-unit id="tip">
                 <source>tip</source>
@@ -325,6 +335,70 @@
                 <source>action.network_in</source>
                 <target>RESEAU</target>
             </trans-unit>
+            <trans-unit id="remember">
+                <source>remember</source>
+                <target>Se souvenir de moi</target>
+            </trans-unit>
+            <trans-unit id="forgot_password">
+                <source>forgot_password</source>
+                <target>Mot de passe oublie?</target>
+            </trans-unit>
+
+            <trans-unit id="term_condition">
+                <source>term_condition</source>
+                <target>Termes et conditions</target>
+            </trans-unit>
+            <trans-unit id="business_model">
+                <source>business_model</source>
+                <target>Modele Business Entreprise</target>
+            </trans-unit>
+            <trans-unit id="product_price">
+                <source>product_price</source>
+                <target>Produits et Prix</target>
+            </trans-unit>
+
+            <trans-unit id="menu_1">
+                <source>menu_1</source>
+                <target>Accueil</target>
+            </trans-unit>
+            <trans-unit id="menu_2">
+                <source>menu_2</source>
+                <target>Inscription</target>
+            </trans-unit>
+            <trans-unit id="menu_3">
+                <source>menu_3</source>
+                <target>Mon Compte</target>
+            </trans-unit>
+
+            <trans-unit id="menu_4">
+                <source>menu_4</source>
+                <target>Mon Reseau</target>
+            </trans-unit>
+            <trans-unit id="menu_5">
+                <source>menu_5</source>
+                <target>Rapport</target>
+            </trans-unit>
+            <trans-unit id="menu_6">
+                <source>menu_6</source>
+                <target>Commission</target>
+            </trans-unit>
+            <trans-unit id="menu_7">
+                <source>menu_7</source>
+                <target>Commandes</target>
+            </trans-unit>
+            <trans-unit id="menu_8">
+                <source>menu_8</source>
+                <target>Historique et Archives</target>
+            </trans-unit>
+            <trans-unit id="menu_9">
+                <source>menu_9</source>
+                <target>Pharmacovigilance</target>
+            </trans-unit>
+
+
+
+
+
 
         </body>
     </file>

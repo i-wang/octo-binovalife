@@ -18,8 +18,8 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_90f0530092f6b7910457da6e306a2c0fafe9bf3bbb105bd8ab7c2dbd70f837c1 = $this->env->getExtension("native_profiler");
-        $__internal_90f0530092f6b7910457da6e306a2c0fafe9bf3bbb105bd8ab7c2dbd70f837c1->enter($__internal_90f0530092f6b7910457da6e306a2c0fafe9bf3bbb105bd8ab7c2dbd70f837c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_c8ecbe07ba30aad535a738683470efae12f6eb24a28706bc4e21a9fb59887c3e = $this->env->getExtension("native_profiler");
+        $__internal_c8ecbe07ba30aad535a738683470efae12f6eb24a28706bc4e21a9fb59887c3e->enter($__internal_c8ecbe07ba30aad535a738683470efae12f6eb24a28706bc4e21a9fb59887c3e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -197,11 +197,17 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 <nav class=\"navbar\" style=\"background:#E2F0D9;top:60px;padding:0;margin:0;width:100%;border-radius:0;height:40px\" >
     <div class=\"container-fluid\">
   <ul class=\"nav navbar-nav navbar-main\">
-    <li><a href=\"index.html\" style=\"color:#FAB329!important;font-weight:600;font-size:13px\">Home</a></li>
+    <li><a href=\"index.html\" style=\"color:#FAB329!important;font-weight:600;font-size:13px\">";
+        // line 124
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_1"), "html", null, true);
+        echo "</a></li>
     <!-- <li><a  href=\"courses.html\"  style=\"padding-left:3em;color:#4A7B3E!important;font-weight:600;font-size:13px;padding-right:3em\">Registration</a></li> -->
 
     <li class=\"dropdown profile-dropdown\" >
-        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">Registration&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
+        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 128
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_2"), "html", null, true);
+        echo "&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
         <ul class=\"dropdown-menu\" style=\"border-radius:0;margin-top:1px\" >
             <li><a href=\"#\" style=\"padding:4px 10px;font-size:80%;margin-top:6px\" id=\"pre-register\">Pre-register</a></li>
             <li class=\"divider\"></li>
@@ -210,7 +216,10 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
         </ul>
     </li>
     <li class=\"dropdown profile-dropdown\" >
-        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">My Account&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
+        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 137
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_3"), "html", null, true);
+        echo "&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
         <ul class=\"dropdown-menu\" style=\"border-radius:0;margin-top:1px\" >
             <li><a href=\"#\" style=\"padding:4px 10px;font-size:80%;margin-top:6px\" id=\"account\" >Account</a></li>
             <li class=\"divider\"></li>
@@ -222,7 +231,10 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
         </ul>
     </li>
     <li class=\"dropdown profile-dropdown\" >
-        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">My Network&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
+        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 146
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_4"), "html", null, true);
+        echo "&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
         <ul class=\"dropdown-menu\" style=\"border-radius:0;margin-top:1px\" >
             <li><a href=\"#\" style=\"padding:4px 10px;font-size:80%;margin-top:6px\" id=\"network\">Network</a></li>
             <li class=\"divider\"></li>
@@ -235,9 +247,18 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
     </li>
     <!-- <li><a href=\"team.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">My Account</a></li> -->
     <!-- <li><a href=\"team.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">My Network</a></li> -->
-    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">Rapport</a></li>
-    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">Commissions</a></li>
-    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">Commandes</a></li>
+    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 156
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_5"), "html", null, true);
+        echo "</a></li>
+    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 157
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_6"), "html", null, true);
+        echo "</a></li>
+    <li><a  href=\"contact.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 158
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_7"), "html", null, true);
+        echo "</a></li>
   </ul>
 
   </div>
@@ -275,19 +296,22 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
         echo "  <ul class=\"nav navbar-nav navbar-main pull-right\">
 
     <li class=\"dropdown profile-dropdown\" >
-        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em\">Historique et Archives&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
+        <a  class=\"dropdown-toggle button-wave\" data-toggle=\"dropdown\" role=\"button\"  style=\"color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 181
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_8"), "html", null, true);
+        echo "&nbsp;&nbsp;&nbsp;<i class=\"fa fa-caret-down\" style=\"color:#747474\"></i></a>
         <ul class=\"dropdown-menu\" style=\"border-radius:0;margin-top:1px\" >
             <li><a href=\"#\" style=\"padding:4px 10px;font-size:80%;margin-top:6px\">Historique</a></li>
             <li class=\"divider\"></li>
-            <li><a href=\"";
-        // line 185
-        echo $this->env->getExtension('routing')->getPath("security_logout");
-        echo "\"  style=\"padding:4px 10px;font-size:80%\">Archive</a></li>
+            <li><a href=\"#\"  style=\"padding:4px 10px;font-size:80%\">Archive</a></li>
 
         </ul>
     </li>
     <!-- <li><a href=\"team.html\"  style=\"color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em\">My Account</a></li> -->
-    <li><a href=\"#\"  style=\"color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em\">Pharmacovigilance</a></li>
+    <li><a href=\"#\"  style=\"color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em\">";
+        // line 190
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("menu_9"), "html", null, true);
+        echo "</a></li>
 
   </ul>
   </div>
@@ -652,27 +676,27 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 </html>
 ";
         
-        $__internal_90f0530092f6b7910457da6e306a2c0fafe9bf3bbb105bd8ab7c2dbd70f837c1->leave($__internal_90f0530092f6b7910457da6e306a2c0fafe9bf3bbb105bd8ab7c2dbd70f837c1_prof);
+        $__internal_c8ecbe07ba30aad535a738683470efae12f6eb24a28706bc4e21a9fb59887c3e->leave($__internal_c8ecbe07ba30aad535a738683470efae12f6eb24a28706bc4e21a9fb59887c3e_prof);
 
     }
 
     // line 9
     public function block_title($context, array $blocks = array())
     {
-        $__internal_dd27b36212116d7773808bd0039ebecd753c49ad8c372507cd40d0f45911874f = $this->env->getExtension("native_profiler");
-        $__internal_dd27b36212116d7773808bd0039ebecd753c49ad8c372507cd40d0f45911874f->enter($__internal_dd27b36212116d7773808bd0039ebecd753c49ad8c372507cd40d0f45911874f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_52b3212e831dd61a77bb4772a11313e4d88dba3777766538078ad511ec1a0d17 = $this->env->getExtension("native_profiler");
+        $__internal_52b3212e831dd61a77bb4772a11313e4d88dba3777766538078ad511ec1a0d17->enter($__internal_52b3212e831dd61a77bb4772a11313e4d88dba3777766538078ad511ec1a0d17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Binovalife :: WEB OFFICE";
         
-        $__internal_dd27b36212116d7773808bd0039ebecd753c49ad8c372507cd40d0f45911874f->leave($__internal_dd27b36212116d7773808bd0039ebecd753c49ad8c372507cd40d0f45911874f_prof);
+        $__internal_52b3212e831dd61a77bb4772a11313e4d88dba3777766538078ad511ec1a0d17->leave($__internal_52b3212e831dd61a77bb4772a11313e4d88dba3777766538078ad511ec1a0d17_prof);
 
     }
 
     // line 21
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_6b1d227e31433b995e1eea90850238a05d9535f524f230ee115b469c2edb1913 = $this->env->getExtension("native_profiler");
-        $__internal_6b1d227e31433b995e1eea90850238a05d9535f524f230ee115b469c2edb1913->enter($__internal_6b1d227e31433b995e1eea90850238a05d9535f524f230ee115b469c2edb1913_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_919d70eebd9508b8fbe5413d027a44e884a92c1698c70473345283d5df43a9be = $this->env->getExtension("native_profiler");
+        $__internal_919d70eebd9508b8fbe5413d027a44e884a92c1698c70473345283d5df43a9be->enter($__internal_919d70eebd9508b8fbe5413d027a44e884a92c1698c70473345283d5df43a9be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 22
         echo "            ";
@@ -700,15 +724,15 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 
             ";
         
-        $__internal_6b1d227e31433b995e1eea90850238a05d9535f524f230ee115b469c2edb1913->leave($__internal_6b1d227e31433b995e1eea90850238a05d9535f524f230ee115b469c2edb1913_prof);
+        $__internal_919d70eebd9508b8fbe5413d027a44e884a92c1698c70473345283d5df43a9be->leave($__internal_919d70eebd9508b8fbe5413d027a44e884a92c1698c70473345283d5df43a9be_prof);
 
     }
 
     // line 424
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_e21a38b4448e6cb439b3145104a745e7ef50ae83befb799cb4e9c7b31534d000 = $this->env->getExtension("native_profiler");
-        $__internal_e21a38b4448e6cb439b3145104a745e7ef50ae83befb799cb4e9c7b31534d000->enter($__internal_e21a38b4448e6cb439b3145104a745e7ef50ae83befb799cb4e9c7b31534d000_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_9d31093812d7fea8a9b9be90d2f0970756dd66c25605225233e61f54080d546e = $this->env->getExtension("native_profiler");
+        $__internal_9d31093812d7fea8a9b9be90d2f0970756dd66c25605225233e61f54080d546e->enter($__internal_9d31093812d7fea8a9b9be90d2f0970756dd66c25605225233e61f54080d546e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 425
         echo "    ";
@@ -805,7 +829,7 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 
     ";
         
-        $__internal_e21a38b4448e6cb439b3145104a745e7ef50ae83befb799cb4e9c7b31534d000->leave($__internal_e21a38b4448e6cb439b3145104a745e7ef50ae83befb799cb4e9c7b31534d000_prof);
+        $__internal_9d31093812d7fea8a9b9be90d2f0970756dd66c25605225233e61f54080d546e->leave($__internal_9d31093812d7fea8a9b9be90d2f0970756dd66c25605225233e61f54080d546e_prof);
 
     }
 
@@ -821,7 +845,7 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 
     public function getDebugInfo()
     {
-        return array (  802 => 463,  798 => 462,  793 => 460,  789 => 459,  785 => 458,  780 => 456,  776 => 455,  772 => 454,  767 => 452,  763 => 451,  759 => 450,  755 => 449,  750 => 447,  745 => 445,  741 => 444,  736 => 442,  732 => 441,  728 => 440,  724 => 439,  720 => 438,  716 => 436,  714 => 425,  708 => 424,  697 => 37,  693 => 36,  689 => 35,  685 => 34,  680 => 33,  678 => 22,  672 => 21,  660 => 9,  592 => 467,  590 => 424,  562 => 399,  554 => 394,  547 => 390,  540 => 386,  533 => 382,  526 => 378,  519 => 374,  507 => 365,  500 => 361,  493 => 357,  486 => 353,  479 => 349,  472 => 345,  465 => 341,  457 => 336,  449 => 331,  441 => 328,  327 => 219,  314 => 209,  305 => 203,  284 => 185,  275 => 178,  265 => 173,  256 => 169,  252 => 167,  250 => 166,  231 => 150,  219 => 141,  185 => 109,  170 => 107,  166 => 106,  159 => 101,  153 => 100,  147 => 99,  143 => 98,  139 => 96,  130 => 92,  126 => 91,  122 => 90,  118 => 89,  115 => 88,  113 => 87,  106 => 85,  99 => 81,  92 => 77,  52 => 41,  50 => 21,  35 => 9,  25 => 1,);
+        return array (  826 => 463,  822 => 462,  817 => 460,  813 => 459,  809 => 458,  804 => 456,  800 => 455,  796 => 454,  791 => 452,  787 => 451,  783 => 450,  779 => 449,  774 => 447,  769 => 445,  765 => 444,  760 => 442,  756 => 441,  752 => 440,  748 => 439,  744 => 438,  740 => 436,  738 => 425,  732 => 424,  721 => 37,  717 => 36,  713 => 35,  709 => 34,  704 => 33,  702 => 22,  696 => 21,  684 => 9,  616 => 467,  614 => 424,  586 => 399,  578 => 394,  571 => 390,  564 => 386,  557 => 382,  550 => 378,  543 => 374,  531 => 365,  524 => 361,  517 => 357,  510 => 353,  503 => 349,  496 => 345,  489 => 341,  481 => 336,  473 => 331,  465 => 328,  351 => 219,  338 => 209,  329 => 203,  313 => 190,  301 => 181,  296 => 178,  286 => 173,  277 => 169,  273 => 167,  271 => 166,  260 => 158,  256 => 157,  252 => 156,  243 => 150,  236 => 146,  228 => 141,  221 => 137,  209 => 128,  202 => 124,  185 => 109,  170 => 107,  166 => 106,  159 => 101,  153 => 100,  147 => 99,  143 => 98,  139 => 96,  130 => 92,  126 => 91,  122 => 90,  118 => 89,  115 => 88,  113 => 87,  106 => 85,  99 => 81,  92 => 77,  52 => 41,  50 => 21,  35 => 9,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -947,11 +971,11 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 /* <nav class="navbar" style="background:#E2F0D9;top:60px;padding:0;margin:0;width:100%;border-radius:0;height:40px" >*/
 /*     <div class="container-fluid">*/
 /*   <ul class="nav navbar-nav navbar-main">*/
-/*     <li><a href="index.html" style="color:#FAB329!important;font-weight:600;font-size:13px">Home</a></li>*/
+/*     <li><a href="index.html" style="color:#FAB329!important;font-weight:600;font-size:13px">{{ 'menu_1'|trans }}</a></li>*/
 /*     <!-- <li><a  href="courses.html"  style="padding-left:3em;color:#4A7B3E!important;font-weight:600;font-size:13px;padding-right:3em">Registration</a></li> -->*/
 /* */
 /*     <li class="dropdown profile-dropdown" >*/
-/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">Registration&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
+/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_2'|trans }}&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
 /*         <ul class="dropdown-menu" style="border-radius:0;margin-top:1px" >*/
 /*             <li><a href="#" style="padding:4px 10px;font-size:80%;margin-top:6px" id="pre-register">Pre-register</a></li>*/
 /*             <li class="divider"></li>*/
@@ -960,7 +984,7 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 /*         </ul>*/
 /*     </li>*/
 /*     <li class="dropdown profile-dropdown" >*/
-/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">My Account&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
+/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_3'|trans }}&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
 /*         <ul class="dropdown-menu" style="border-radius:0;margin-top:1px" >*/
 /*             <li><a href="#" style="padding:4px 10px;font-size:80%;margin-top:6px" id="account" >Account</a></li>*/
 /*             <li class="divider"></li>*/
@@ -969,7 +993,7 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 /*         </ul>*/
 /*     </li>*/
 /*     <li class="dropdown profile-dropdown" >*/
-/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">My Network&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
+/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_4'|trans }}&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
 /*         <ul class="dropdown-menu" style="border-radius:0;margin-top:1px" >*/
 /*             <li><a href="#" style="padding:4px 10px;font-size:80%;margin-top:6px" id="network">Network</a></li>*/
 /*             <li class="divider"></li>*/
@@ -979,9 +1003,9 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 /*     </li>*/
 /*     <!-- <li><a href="team.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">My Account</a></li> -->*/
 /*     <!-- <li><a href="team.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">My Network</a></li> -->*/
-/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">Rapport</a></li>*/
-/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">Commissions</a></li>*/
-/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">Commandes</a></li>*/
+/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_5'|trans }}</a></li>*/
+/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_6'|trans }}</a></li>*/
+/*     <li><a  href="contact.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_7'|trans }}</a></li>*/
 /*   </ul>*/
 /* */
 /*   </div>*/
@@ -1004,16 +1028,16 @@ class __TwigTemplate_a2cf3a00a2519bd1f6639b02578ac6cb3a4be6fcdbf6f8a433891f9651f
 /*   <ul class="nav navbar-nav navbar-main pull-right">*/
 /* */
 /*     <li class="dropdown profile-dropdown" >*/
-/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em">Historique et Archives&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
+/*         <a  class="dropdown-toggle button-wave" data-toggle="dropdown" role="button"  style="color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_8'|trans }}&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" style="color:#747474"></i></a>*/
 /*         <ul class="dropdown-menu" style="border-radius:0;margin-top:1px" >*/
 /*             <li><a href="#" style="padding:4px 10px;font-size:80%;margin-top:6px">Historique</a></li>*/
 /*             <li class="divider"></li>*/
-/*             <li><a href="{{ path('security_logout') }}"  style="padding:4px 10px;font-size:80%">Archive</a></li>*/
+/*             <li><a href="#"  style="padding:4px 10px;font-size:80%">Archive</a></li>*/
 /* */
 /*         </ul>*/
 /*     </li>*/
 /*     <!-- <li><a href="team.html"  style="color:#4A7B3E!important;font-weight:600;font-size:13px;padding-left:3em;padding-right:3em">My Account</a></li> -->*/
-/*     <li><a href="#"  style="color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em">Pharmacovigilance</a></li>*/
+/*     <li><a href="#"  style="color:#747474!important;font-weight:400;font-size:13px;padding-left:3em;padding-right:3em">{{ 'menu_9'|trans }}</a></li>*/
 /* */
 /*   </ul>*/
 /*   </div>*/

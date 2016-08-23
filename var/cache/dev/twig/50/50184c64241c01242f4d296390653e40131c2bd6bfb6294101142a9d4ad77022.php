@@ -18,8 +18,8 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_35a74d05e7f1e4ecbb58838bf8eaca85c84867b72886038117f2dab725bb1900 = $this->env->getExtension("native_profiler");
-        $__internal_35a74d05e7f1e4ecbb58838bf8eaca85c84867b72886038117f2dab725bb1900->enter($__internal_35a74d05e7f1e4ecbb58838bf8eaca85c84867b72886038117f2dab725bb1900_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/index.html.twig"));
+        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b = $this->env->getExtension("native_profiler");
+        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b->enter($__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/index.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -177,7 +177,10 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo $this->env->getExtension('routing')->getPath("security_login");
         echo "\" method=\"post\">
               <div class=\"tile-body clearfix\">
-                <div style=\"color:#548235;font-size:16px;padding-top:6px\" class=\"text-center\"><a style=\"color:#747474\">Login to your Account</a> </div>
+                <div style=\"color:#548235;font-size:16px;padding-top:6px\" class=\"text-center\"><a style=\"color:#747474\">";
+        // line 108
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("note"), "html", null, true);
+        echo "</a> </div>
                   ";
         // line 109
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -204,7 +207,10 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
 
                 <div class=\"col-md-8 col-md-offset-2 text-right\" ng-show=\"form._username.\$dirty && form._username.\$error.required\" style=\"background:#f6f9f5\">
-                      <i style=\"font-size:10px;color:red\">This field is required</i>
+                      <i style=\"font-size:10px;color:red\">";
+        // line 124
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("field.too_short"), "html", null, true);
+        echo "</i>
 
                 </div>
 
@@ -218,14 +224,23 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
                   </div>
                 </div>
                 <div class=\"col-md-8 col-md-offset-2 text-right\" ng-show=\"form._password.\$dirty && form._password.\$error.required\" style=\"background:#f6f9f5\">
-                  <i style=\"font-size:10px;color:red\">This field is required</i>
+                  <i style=\"font-size:10px;color:red\">";
+        // line 135
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("field.too_short"), "html", null, true);
+        echo "</i>
                 </div>
                 <!-- <span ng-show=\"form.password.\$dirty && form.password.\$error.required\" class=\"pull-right\" ></span> -->
 
                 <div class=\"col-md-8 col-md-offset-2\" style=\"background:#fafafa;padding:0 0px;margin-top:10px\">
                     <span style=\"background:#f2f2f2;padding:2px 4px\"><i class=\"fa fa-check\" style=\"color:#548235;font-size:12px\"></i></span>
-                    <span style=\"font-size:12px\">Remember me</span>
-                    <a  href=\"#\" class=\"pull-right\" style=\"font-size:80%\">Forgot Password ?</a>
+                    <span style=\"font-size:12px\">";
+        // line 141
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("remember"), "html", null, true);
+        echo "</span>
+                    <a  href=\"#\" class=\"pull-right\" style=\"fon_met-size:80%\">";
+        // line 142
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("forgot_password"), "html", null, true);
+        echo "</a>
                 </div>
                 <div class=\"col-md-8 col-md-offset-2\" style=\"background:#548235;padding:0 10px;margin-top:9%;\">
                   <div class=\"form-actions\">
@@ -246,7 +261,14 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
                 <div class=\"prefooter\">
                         <div class=\"tile purple\">
                             <div class=\"tile-footer text-center\">
-                                <span style=\"font-size:11px\"><a href=\"#\">Terms and Condition</a> | <a href=\"#\">Company Business Model</a> | <a href=\"#\">Product and Pricing</a>
+                                <span style=\"font-size:11px\"><a href=\"#\">";
+        // line 157
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("term_condition"), "html", null, true);
+        echo "</a> | <a href=\"#\">";
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("business_model"), "html", null, true);
+        echo "</a> | <a href=\"#\">>";
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("product_price"), "html", null, true);
+        echo "</a>
             </br> <i style=\"color:#548235;font-style:normal\"> © Copyright 2016, Binovalife. </i></span>
                             </div>
                         </div>
@@ -264,27 +286,27 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo "</html>
 ";
         
-        $__internal_35a74d05e7f1e4ecbb58838bf8eaca85c84867b72886038117f2dab725bb1900->leave($__internal_35a74d05e7f1e4ecbb58838bf8eaca85c84867b72886038117f2dab725bb1900_prof);
+        $__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b->leave($__internal_79d7fb8308492049f0930e7013b8d9449535f0c10f183a08951a1ea8e7debe9b_prof);
 
     }
 
     // line 9
     public function block_title($context, array $blocks = array())
     {
-        $__internal_244586cea8b53bb73cce7fdce44c35771bca4c37e1574f8d788b61be4d097c6d = $this->env->getExtension("native_profiler");
-        $__internal_244586cea8b53bb73cce7fdce44c35771bca4c37e1574f8d788b61be4d097c6d->enter($__internal_244586cea8b53bb73cce7fdce44c35771bca4c37e1574f8d788b61be4d097c6d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab = $this->env->getExtension("native_profiler");
+        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab->enter($__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Binovalife :: WEB OFFICE";
         
-        $__internal_244586cea8b53bb73cce7fdce44c35771bca4c37e1574f8d788b61be4d097c6d->leave($__internal_244586cea8b53bb73cce7fdce44c35771bca4c37e1574f8d788b61be4d097c6d_prof);
+        $__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab->leave($__internal_3a9b8eea03e870a5af8f57394bb0fe7b3853d762cc78d6a6c1f9f0590f6bfbab_prof);
 
     }
 
     // line 19
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_4ad032c4920c238c48ed72d1e049229e3c12eb7cfa0b6e569978d9319ac884b0 = $this->env->getExtension("native_profiler");
-        $__internal_4ad032c4920c238c48ed72d1e049229e3c12eb7cfa0b6e569978d9319ac884b0->enter($__internal_4ad032c4920c238c48ed72d1e049229e3c12eb7cfa0b6e569978d9319ac884b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487 = $this->env->getExtension("native_profiler");
+        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487->enter($__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 20
         echo "            ";
@@ -312,15 +334,15 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
             ";
         
-        $__internal_4ad032c4920c238c48ed72d1e049229e3c12eb7cfa0b6e569978d9319ac884b0->leave($__internal_4ad032c4920c238c48ed72d1e049229e3c12eb7cfa0b6e569978d9319ac884b0_prof);
+        $__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487->leave($__internal_139d3c00423c2fb0657102bac7e17c920e2d6cf2fb967405c7dfc9847b90a487_prof);
 
     }
 
     // line 168
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_fad871cd41972cc23007b31ecdb87daa9a0d686f0b74b2e1b9fc0403d5738f16 = $this->env->getExtension("native_profiler");
-        $__internal_fad871cd41972cc23007b31ecdb87daa9a0d686f0b74b2e1b9fc0403d5738f16->enter($__internal_fad871cd41972cc23007b31ecdb87daa9a0d686f0b74b2e1b9fc0403d5738f16_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c = $this->env->getExtension("native_profiler");
+        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c->enter($__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 169
         echo "    ";
@@ -409,7 +431,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
         echo "\"></script>
     ";
         
-        $__internal_fad871cd41972cc23007b31ecdb87daa9a0d686f0b74b2e1b9fc0403d5738f16->leave($__internal_fad871cd41972cc23007b31ecdb87daa9a0d686f0b74b2e1b9fc0403d5738f16_prof);
+        $__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c->leave($__internal_7031a67d4d8f7b61ff519eb1ca52422d0f62cf72592d9d52aaeb01ee0f136e3c_prof);
 
     }
 
@@ -425,7 +447,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 
     public function getDebugInfo()
     {
-        return array (  408 => 201,  404 => 200,  400 => 199,  396 => 198,  392 => 197,  388 => 196,  384 => 195,  380 => 194,  376 => 193,  372 => 192,  368 => 191,  364 => 190,  360 => 189,  356 => 188,  352 => 187,  348 => 186,  344 => 185,  340 => 184,  336 => 183,  332 => 182,  328 => 180,  326 => 169,  320 => 168,  309 => 35,  305 => 34,  301 => 33,  297 => 32,  292 => 31,  290 => 20,  284 => 19,  272 => 9,  264 => 203,  262 => 168,  238 => 147,  234 => 146,  215 => 130,  199 => 117,  195 => 115,  188 => 111,  185 => 110,  183 => 109,  177 => 106,  172 => 104,  167 => 102,  153 => 90,  138 => 88,  134 => 87,  127 => 82,  121 => 81,  115 => 80,  111 => 79,  107 => 77,  98 => 73,  94 => 72,  90 => 71,  87 => 70,  85 => 69,  54 => 41,  50 => 39,  48 => 19,  35 => 9,  25 => 1,);
+        return array (  430 => 201,  426 => 200,  422 => 199,  418 => 198,  414 => 197,  410 => 196,  406 => 195,  402 => 194,  398 => 193,  394 => 192,  390 => 191,  386 => 190,  382 => 189,  378 => 188,  374 => 187,  370 => 186,  366 => 185,  362 => 184,  358 => 183,  354 => 182,  350 => 180,  348 => 169,  342 => 168,  331 => 35,  327 => 34,  323 => 33,  319 => 32,  314 => 31,  312 => 20,  306 => 19,  294 => 9,  286 => 203,  284 => 168,  266 => 157,  253 => 147,  249 => 146,  242 => 142,  238 => 141,  229 => 135,  221 => 130,  212 => 124,  202 => 117,  198 => 115,  191 => 111,  188 => 110,  186 => 109,  182 => 108,  177 => 106,  172 => 104,  167 => 102,  153 => 90,  138 => 88,  134 => 87,  127 => 82,  121 => 81,  115 => 80,  111 => 79,  107 => 77,  98 => 73,  94 => 72,  90 => 71,  87 => 70,  85 => 69,  54 => 41,  50 => 39,  48 => 19,  35 => 9,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -535,7 +557,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 /*                   </div><!--.tile-title-->*/
 /*                     <form name="form" ng-submit="cx.login()" role="form" action="{{ path('security_login') }}" method="post">*/
 /*               <div class="tile-body clearfix">*/
-/*                 <div style="color:#548235;font-size:16px;padding-top:6px" class="text-center"><a style="color:#747474">Login to your Account</a> </div>*/
+/*                 <div style="color:#548235;font-size:16px;padding-top:6px" class="text-center"><a style="color:#747474">{{ 'note'|trans }}</a> </div>*/
 /*                   {% if error %}*/
 /*                 <div class="col-md-8 col-md-offset-2 text-center" style="background:#f6f9f5;padding-top:10px">*/
 /*                       <p style="font-size:12px;color:red;">{{ error.messageKey|trans(error.messageData, 'security') }}</p>*/
@@ -551,7 +573,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 /* */
 /* */
 /*                 <div class="col-md-8 col-md-offset-2 text-right" ng-show="form._username.$dirty && form._username.$error.required" style="background:#f6f9f5">*/
-/*                       <i style="font-size:10px;color:red">This field is required</i>*/
+/*                       <i style="font-size:10px;color:red">{{ 'field.too_short'|trans }}</i>*/
 /* */
 /*                 </div>*/
 /* */
@@ -562,14 +584,14 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 /*                   </div>*/
 /*                 </div>*/
 /*                 <div class="col-md-8 col-md-offset-2 text-right" ng-show="form._password.$dirty && form._password.$error.required" style="background:#f6f9f5">*/
-/*                   <i style="font-size:10px;color:red">This field is required</i>*/
+/*                   <i style="font-size:10px;color:red">{{ 'field.too_short'|trans }}</i>*/
 /*                 </div>*/
 /*                 <!-- <span ng-show="form.password.$dirty && form.password.$error.required" class="pull-right" ></span> -->*/
 /* */
 /*                 <div class="col-md-8 col-md-offset-2" style="background:#fafafa;padding:0 0px;margin-top:10px">*/
 /*                     <span style="background:#f2f2f2;padding:2px 4px"><i class="fa fa-check" style="color:#548235;font-size:12px"></i></span>*/
-/*                     <span style="font-size:12px">Remember me</span>*/
-/*                     <a  href="#" class="pull-right" style="font-size:80%">Forgot Password ?</a>*/
+/*                     <span style="font-size:12px">{{ 'remember'|trans }}</span>*/
+/*                     <a  href="#" class="pull-right" style="fon_met-size:80%">{{ 'forgot_password'|trans }}</a>*/
 /*                 </div>*/
 /*                 <div class="col-md-8 col-md-offset-2" style="background:#548235;padding:0 10px;margin-top:9%;">*/
 /*                   <div class="form-actions">*/
@@ -584,7 +606,7 @@ class __TwigTemplate_a67bb5dd89619c1439c7d735ad041c90e8fa830d154b43efa009a984f51
 /*                 <div class="prefooter">*/
 /*                         <div class="tile purple">*/
 /*                             <div class="tile-footer text-center">*/
-/*                                 <span style="font-size:11px"><a href="#">Terms and Condition</a> | <a href="#">Company Business Model</a> | <a href="#">Product and Pricing</a>*/
+/*                                 <span style="font-size:11px"><a href="#">{{ 'term_condition'|trans }}</a> | <a href="#">{{ 'business_model'|trans }}</a> | <a href="#">>{{ 'product_price'|trans }}</a>*/
 /*             </br> <i style="color:#548235;font-style:normal"> © Copyright 2016, Binovalife. </i></span>*/
 /*                             </div>*/
 /*                         </div>*/

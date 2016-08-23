@@ -105,7 +105,7 @@
                   </div><!--.tile-title-->
                     <form name="form" ng-submit="cx.login()" role="form" action="{{ path('security_login') }}" method="post">
               <div class="tile-body clearfix">
-                <div style="color:#548235;font-size:16px;padding-top:6px" class="text-center"><a style="color:#747474">Login to your Account</a> </div>
+                <div style="color:#548235;font-size:16px;padding-top:6px" class="text-center"><a style="color:#747474">{{ 'note'|trans }}</a> </div>
                   {% if error %}
                 <div class="col-md-8 col-md-offset-2 text-center" style="background:#f6f9f5;padding-top:10px">
                       <p style="font-size:12px;color:red;">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
@@ -121,7 +121,7 @@
 
 
                 <div class="col-md-8 col-md-offset-2 text-right" ng-show="form._username.$dirty && form._username.$error.required" style="background:#f6f9f5">
-                      <i style="font-size:10px;color:red">This field is required</i>
+                      <i style="font-size:10px;color:red">{{ 'field.too_short'|trans }}</i>
 
                 </div>
 
@@ -132,14 +132,14 @@
                   </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-right" ng-show="form._password.$dirty && form._password.$error.required" style="background:#f6f9f5">
-                  <i style="font-size:10px;color:red">This field is required</i>
+                  <i style="font-size:10px;color:red">{{ 'field.too_short'|trans }}</i>
                 </div>
                 <!-- <span ng-show="form.password.$dirty && form.password.$error.required" class="pull-right" ></span> -->
 
                 <div class="col-md-8 col-md-offset-2" style="background:#fafafa;padding:0 0px;margin-top:10px">
                     <span style="background:#f2f2f2;padding:2px 4px"><i class="fa fa-check" style="color:#548235;font-size:12px"></i></span>
-                    <span style="font-size:12px">Remember me</span>
-                    <a  href="#" class="pull-right" style="font-size:80%">Forgot Password ?</a>
+                    <span style="font-size:12px">{{ 'remember'|trans }}</span>
+                    <a  href="#" class="pull-right" style="fon_met-size:80%">{{ 'forgot_password'|trans }}</a>
                 </div>
                 <div class="col-md-8 col-md-offset-2" style="background:#548235;padding:0 10px;margin-top:9%;">
                   <div class="form-actions">
@@ -154,7 +154,7 @@
                 <div class="prefooter">
                         <div class="tile purple">
                             <div class="tile-footer text-center">
-                                <span style="font-size:11px"><a href="#">Terms and Condition</a> | <a href="#">Company Business Model</a> | <a href="#">Product and Pricing</a>
+                                <span style="font-size:11px"><a href="#">{{ 'term_condition'|trans }}</a> | <a href="#">{{ 'business_model'|trans }}</a> | <a href="#">{{ 'product_price'|trans }}</a>
             </br> <i style="color:#548235;font-style:normal"> © Copyright 2016, Binovalife. </i></span>
                             </div>
                         </div>
