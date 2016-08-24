@@ -21,20 +21,20 @@ class __TwigTemplate_16fcd04323cdae9e5fc9b92a239f3d1f50c955f3747eb0d49572057e820
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fa1f115db1f1d068b12e06e9ee58a6e9b39de5ae2cd4f15c81142f1aae56fdbf = $this->env->getExtension("native_profiler");
-        $__internal_fa1f115db1f1d068b12e06e9ee58a6e9b39de5ae2cd4f15c81142f1aae56fdbf->enter($__internal_fa1f115db1f1d068b12e06e9ee58a6e9b39de5ae2cd4f15c81142f1aae56fdbf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "distributor/index.html.twig"));
+        $__internal_bdd0ac202fc301271c7f588711f7cbdda01091bbcb1caaedcce620f841f5edd0 = $this->env->getExtension("native_profiler");
+        $__internal_bdd0ac202fc301271c7f588711f7cbdda01091bbcb1caaedcce620f841f5edd0->enter($__internal_bdd0ac202fc301271c7f588711f7cbdda01091bbcb1caaedcce620f841f5edd0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "distributor/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fa1f115db1f1d068b12e06e9ee58a6e9b39de5ae2cd4f15c81142f1aae56fdbf->leave($__internal_fa1f115db1f1d068b12e06e9ee58a6e9b39de5ae2cd4f15c81142f1aae56fdbf_prof);
+        $__internal_bdd0ac202fc301271c7f588711f7cbdda01091bbcb1caaedcce620f841f5edd0->leave($__internal_bdd0ac202fc301271c7f588711f7cbdda01091bbcb1caaedcce620f841f5edd0_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_aa75cf41b0160fe7c2ca303000beab2ba8c91d3c84db6bbc10af486792f0e9a4 = $this->env->getExtension("native_profiler");
-        $__internal_aa75cf41b0160fe7c2ca303000beab2ba8c91d3c84db6bbc10af486792f0e9a4->enter($__internal_aa75cf41b0160fe7c2ca303000beab2ba8c91d3c84db6bbc10af486792f0e9a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_037e944aa5110c6faca888759371039fc90ae694812d6cef9b8815c324ba813e = $this->env->getExtension("native_profiler");
+        $__internal_037e944aa5110c6faca888759371039fc90ae694812d6cef9b8815c324ba813e->enter($__internal_037e944aa5110c6faca888759371039fc90ae694812d6cef9b8815c324ba813e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<div class=\"container-fluid\">
@@ -46,11 +46,9 @@ class __TwigTemplate_16fcd04323cdae9e5fc9b92a239f3d1f50c955f3747eb0d49572057e820
 
     </div>
 <div class=\"col-md-12 row\">
-  <a href=\"";
-        // line 9
-        echo $this->env->getExtension('routing')->getPath("distributor_new");
-        echo "\" class=\"pull-right\" style=\"color:#4A7B3E\"><i class=\"fa fa-edit\">&nbsp;&nbsp;&nbsp;Pre-register a Distributor</i></a>
-  <div class=\"col-md-12 text-center\" style=\"margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%\">
+  ";
+        // line 10
+        echo "  <div class=\"col-md-12 text-center\" style=\"margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%\">
             <div class=\"col-md-3\" style=\"min-height:140px;background:#f2f2f2;padding:50px 0\">
                 <h4>No Photo Available</h4>
             </div>
@@ -183,7 +181,7 @@ class __TwigTemplate_16fcd04323cdae9e5fc9b92a239f3d1f50c955f3747eb0d49572057e820
         </div>
 ";
         
-        $__internal_aa75cf41b0160fe7c2ca303000beab2ba8c91d3c84db6bbc10af486792f0e9a4->leave($__internal_aa75cf41b0160fe7c2ca303000beab2ba8c91d3c84db6bbc10af486792f0e9a4_prof);
+        $__internal_037e944aa5110c6faca888759371039fc90ae694812d6cef9b8815c324ba813e->leave($__internal_037e944aa5110c6faca888759371039fc90ae694812d6cef9b8815c324ba813e_prof);
 
     }
 
@@ -199,7 +197,7 @@ class __TwigTemplate_16fcd04323cdae9e5fc9b92a239f3d1f50c955f3747eb0d49572057e820
 
     public function getDebugInfo()
     {
-        return array (  176 => 86,  166 => 82,  162 => 81,  158 => 80,  154 => 79,  148 => 78,  144 => 77,  140 => 76,  136 => 75,  132 => 74,  128 => 73,  125 => 72,  121 => 71,  61 => 16,  51 => 9,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  174 => 86,  164 => 82,  160 => 81,  156 => 80,  152 => 79,  146 => 78,  142 => 77,  138 => 76,  134 => 75,  130 => 74,  126 => 73,  123 => 72,  119 => 71,  59 => 16,  51 => 10,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -210,7 +208,7 @@ class __TwigTemplate_16fcd04323cdae9e5fc9b92a239f3d1f50c955f3747eb0d49572057e820
 /* */
 /*     </div>*/
 /* <div class="col-md-12 row">*/
-/*   <a href="{{ path('distributor_new') }}" class="pull-right" style="color:#4A7B3E"><i class="fa fa-edit">&nbsp;&nbsp;&nbsp;Pre-register a Distributor</i></a>*/
+/*   {#  <a href="{{ path('distributor_new') }}" class="pull-right" style="color:#4A7B3E"><i class="fa fa-edit">&nbsp;&nbsp;&nbsp;Pre-register a Distributor</i></a>#}*/
 /*   <div class="col-md-12 text-center" style="margin-top:1%;background:#fafafa;padding-top:2%;padding-bottom:2%">*/
 /*             <div class="col-md-3" style="min-height:140px;background:#f2f2f2;padding:50px 0">*/
 /*                 <h4>No Photo Available</h4>*/
